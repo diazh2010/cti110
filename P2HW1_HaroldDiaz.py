@@ -1,4 +1,4 @@
-# A brief description of the project
+# Calculating the purchase price of 5 items with tax.
 # 2/25/2022
 # CTI-110 P2HW1 - Total Purchases
 # Harold Diaz
