@@ -1,0 +1,67 @@
+# CTI-110
+# P3HW2 - Pizza Order
+# Harold Diaz
+# 3/24/2022
+#Ask user for number of students they would like to order pizza for
+#Ask user for number of people that will be sharing each pizza (1.5, 2, or 3)
+#Depending on user input for number of people that will be sharing:
+#Program is to calculate the number of whole pizzas user needs to buy
+#Number of people sharing will dictate how many people per pizza
+#Round pizzas up to whole pizza
+#If user enters other value than 1.5, 2 or 3 students sharing
+#Display error and notify user they should have entered 1.5, 2, or 3
+#Otherwise, calculate price for number of pizzas needed assuming price per pizza is $5
+#Calculate tax of 6%
+
+import math
+
+num_students = int(input('How many students do you want to order pizza for? '))
+num_sharing = float(input('Enter number of people per pizza ( 1.5, 2, or 3): '))
+num_pizzas = 0
+  
+if num_sharing == 1.5:
+    num_pizzas = num_students / 1.5
+    rounded_pizzas = math.ceil(num_pizzas)
+    subtotal = (rounded_pizzas * 5)
+    tax = (subtotal * 0.06)
+    total = (subtotal + tax)
+    print()
+    print('----Pizza Order-------')
+    print('Number of Students:',num_students)
+    print('Pizzas Needed:',rounded_pizzas)
+    print('Price:',f'${total:.2f}')
+    print('-----------------------')
+
+elif num_sharing == 2:
+    num_pizzas = num_students / 2
+    rounded_pizzas = math.ceil(num_pizzas)
+    subtotal = (rounded_pizzas * 5)
+    tax = (subtotal * 0.06)
+    total = (subtotal + tax)
+    print()
+    print('----Pizza Order-------')
+    print('Number of Students:',num_students)
+    print('Pizzas Needed:',rounded_pizzas)
+    print('Price:',f'${total:.2f}')
+    print('-----------------------')
+
+elif num_sharing == 3:
+    num_pizzas = num_students / 3
+    rounded_pizzas = math.ceil(num_pizzas)
+    subtotal = (rounded_pizzas * 5)
+    tax = (subtotal * 0.06)
+    total = (subtotal + tax)
+    print()
+    print('----Pizza Order-------')
+    print('Number of Students:',num_students)
+    print('Pizzas Needed:',rounded_pizzas)
+    print('Price:',f'${total:.2f}')
+    print('-----------------------')
+
+else:
+    print('Should have entered 1.5, 2, or 3')
+    print('Run Program again')
+
+
+
+
